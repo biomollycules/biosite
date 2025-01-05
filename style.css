@@ -24,10 +24,11 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid #ff0099;
     margin: 0 auto;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
+    border: 2px solid #ff0099;
+
   }
 
 h1 {
