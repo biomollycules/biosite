@@ -24,6 +24,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    border: 2px solid #ff0099;
     margin: 0 auto;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
@@ -103,9 +104,15 @@ h4 {
     font-weight: none;
     grid-template-columns: auto 1fr;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
-    min-width: 250px; /* ensures a minimum width */
+    min-width: 250px; /* Ensures a minimum width */
 }
-  
+
+.linksectiontitle {
+    font-size: 0.9rem;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .linkyoutube:hover,
 .linkinstagram:hover,
 .linkdribbble:hover,
@@ -115,5 +122,4 @@ h4 {
 .linketsy:hover {
     background: #fbf5f8;
 }
-  
   
