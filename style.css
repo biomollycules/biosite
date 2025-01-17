@@ -127,7 +127,7 @@ h4 {
 .linketsy:hover {
     background: #2c2b2b;
     color: #ffffff;
-    box-shadow: 0 4px 8px rgba(255, 1, 217, 0.2); /* drop shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
 
 }
   
