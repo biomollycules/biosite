@@ -86,8 +86,7 @@ h4 {
 }
   
 .linkyoutube, 
-.linkinstagram,
-.linktree {
+.linkinstagram {
     text-decoration: none;
     font-size: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -102,6 +101,21 @@ h4 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
 }
 
+.linktree {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0px / 0%; /* horizontal / vertical rounding */    
+    display: grid;
+    align-items: center; /* vertical center */
+    background: #ffffff;
+    color: #000000;
+    padding: 0px 40px 0px 0px;
+    font-weight: none;
+    grid-template-columns: auto 1fr;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
+}
+    
 .linkwebsite {
     text-decoration: none;
     font-size: 0.8rem;
