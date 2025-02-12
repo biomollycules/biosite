@@ -14,6 +14,7 @@ body {
     cursor: crosshair;
 }
 
+
 .profilecontainer {
     text-align: center;
     max-width: 400px;
@@ -44,7 +45,7 @@ h1 {
 h4 {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: .8rem;
+    font-size: 1.1rem;
 }
   
 .bio {
@@ -56,17 +57,18 @@ h4 {
   
 .links {
     display: grid;
-    justify-content: center;    ;
+    justify-content: center; 
     gap: 10px;
     grid-template-columns: .7fr;
-    max-width: 300px;
+    max-width: 350px;
 }
 
 
 .linkwebsite img,
 .linkyoutube img,
 .linkinstagram img,
-.linkgithub img {
+.linkgithub img,
+.linklinkedin img {
     width: 40px; 
     height: 40px;
     object-fit: fill;
@@ -76,7 +78,8 @@ h4 {
 .linkyoutube, 
 .linkinstagram,
 .linkwebsite,
-.linkgithub {
+.linkgithub,
+.linklinkedin {
     text-decoration: none;
     font-size: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -89,13 +92,10 @@ h4 {
     font-weight: none;
     grid-template-columns: auto 1fr;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* drop shadow */
+    width: 300px;
 }
 
 
-.linklinkedin img {
-    border-radius: 13px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* drop shadow */
-}
 
 
 .linksectiontitle {
@@ -110,26 +110,12 @@ h4 {
 .linkyoutube:hover,
 .linkinstagram:hover,
 .linkwebsite:hover,
-.linkgithub:hover {
+.linkgithub:hover,
+.linklinkedin:hover {
     background: #2c2b2b;
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* drop shadow */
 
 }
   
-/* linked in container */
-.container {
-    position: relative;
-    width: 100%;   /* or set a specific width */
-    height: 100px; /* or set a specific height */
-  }
-  
-  .overlay-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;  /* Adjust the size of the overlay image */
-    height: 25px; /* Adjust the size of the overlay image */
-    object-fit: fill;  /* Optional: ensures the overlay image doesn't distort */
-  }
-  /* end linked in container */
+
