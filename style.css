@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding-top: 4%;
     font-family: Arial, sans-serif;
-    background-image: url(whitemarblewhitestars.svg);
+    background-image: url('backgroundimage.jpg');
     background-size: cover;
     background-repeat: no-repeat;    
     background-attachment: fixed;
@@ -11,6 +11,7 @@ body {
     height: 100vh;
     align-items: center;
     color: #000000;
+    cursor: crosshair;
 }
 
 .profilecontainer {
@@ -30,7 +31,7 @@ body {
     border-radius: 50%;
     border: 2px solid #000000;
     margin: 0 auto;
-    object-fit: cover;
+    object-fit: fill;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
   }
 
@@ -58,39 +59,28 @@ h4 {
     justify-content: center;    ;
     gap: 10px;
     grid-template-columns: .7fr;
+    max-width: 300px;
 }
-  
-.links img {
+
+
+.linkwebsite img,
+.linkyoutube img,
+.linkinstagram img,
+.linkgithub img {
     width: 40px; 
-    height: 35px;
-    border-radius: 0%; 
-    object-fit: cover;
-    padding: 10px;
-}
-
-.linkmyapp img {
-    width: 60px; 
-    height: 60px;
-    object-fit: cover;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-left: 0px;
-    padding-bottom: 10px;
-}
-
-.linktree img {
-    width: 60px; 
-    height: 60px;
-    object-fit: cover;
+    height: 40px;
+    object-fit: fill;
     padding: 10px;
 }
   
 .linkyoutube, 
-.linkinstagram {
+.linkinstagram,
+.linkwebsite,
+.linkgithub {
     text-decoration: none;
     font-size: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 30px / 60%; /* horizontal / vertical rounding */    
+    border-radius: 13px; 
     display: grid;
     align-items: center; /* vertical center */
     background: #ffffff;
@@ -98,55 +88,15 @@ h4 {
     padding: 0px 40px 0px 0px;
     font-weight: none;
     grid-template-columns: auto 1fr;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* drop shadow */
 }
 
-.linktree {
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 50px / 60%; /* horizontal / vertical rounding */    
-    display: grid;
-    align-items: center; /* vertical center */
-    background: #ffffff;
-    color: #000000;
-    padding: 0px 40px 0px 0px;
-    font-weight: none;
-    grid-template-columns: auto 1fr;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
-}
-    
-.linkwebsite {
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 30px / 60%; /* horizontal / vertical rounding */    
-    display: grid;
-    align-items: center; /* vertical center */
-    background: #ffffff;
-    color: #000000;
-    padding: 0px 40px 0px 0px;
-    font-weight: none;
-    grid-template-columns: auto 1fr;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
-    min-width: 250px;
+
+.linklinkedin img {
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* drop shadow */
 }
 
-.linkmyapp {
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 50px / 60%; /* horizontal / vertical rounding */    
-    display: grid;
-    align-items: center; /* vertical center */
-    background: #ffffff;
-    color: #000000;
-    padding: 0px 40px 0px 20px;
-    font-weight: none;
-    grid-template-columns: auto 1fr;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
-    min-width: 250px; /* ensures a minimum width */
-}
 
 .linksectiontitle {
     font-size: 0.9rem;
@@ -154,13 +104,32 @@ h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+
+
 .linkyoutube:hover,
 .linkinstagram:hover,
 .linkwebsite:hover,
-.linkmyapp:hover, 
-.linktree:hover {
+.linkgithub:hover {
     background: #2c2b2b;
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* drop shadow */
 
 }
+  
+/* linked in container */
+.container {
+    position: relative;
+    width: 100%;   /* or set a specific width */
+    height: 100px; /* or set a specific height */
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;  /* Adjust the size of the overlay image */
+    height: 25px; /* Adjust the size of the overlay image */
+    object-fit: fill;  /* Optional: ensures the overlay image doesn't distort */
+  }
+  /* end linked in container */
