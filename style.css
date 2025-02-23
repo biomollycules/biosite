@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding-top: 4%;
     font-family: Arial, sans-serif;
-    background-image: url('backgroundimage.jpg');
+    background-image: radial-gradient(#ff3399, #ffffff, #ff3399);
     background-size: cover;
     background-repeat: no-repeat;    
     background-attachment: fixed;
@@ -95,7 +95,9 @@ h4 {
     width: 300px;
 }
 
-
+.linkinstagram {
+    background-color: #484444;
+}
 
 
 .linksectiontitle {
@@ -118,4 +120,5 @@ h4 {
 
 }
   
+
 
