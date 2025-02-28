@@ -1,15 +1,195 @@
 body {
-    margin: 0;
+    margin: 20;
     padding-top: 4%;
     font-family: Arial, sans-serif;
-    background-image: radial-gradient(#ff3399, #ffffff, #ff3399);
+    background-image: radial-gradient(#cde9e9, #ffffff, #6c7d78);
     background-size: cover;
     background-repeat: no-repeat;    
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    align-items: center;
     color: #000000;
     cursor: crosshair;
+    align-items: center;
 }
+
+.containerbody {
+    display: flex;
+    flex-direction: column;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer"
+  }  
+
+header {
+    background-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100px;
+}
+
+
+.containermain {  
+    display: grid;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pg1 pg1 pg1"
+      "pg2 pg2 pg2"
+      "pg3 pg3 pg3"
+  }  
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+.pg1 { 
+    grid-area: pg1; 
+    min-height: 200px;
+    padding: 80px;
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid rgb(46, 46, 46);
+    white-space: nowrap;
+    font-size: 1.3rem;
+    width: 0;
+    animation: 
+        typing 3s steps(20, end) forwards,
+        blink .3s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 91% }
+  }
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: rgb(0, 0, 0); }
+  }
+  
+
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul li {
+    position: absolute;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.screamqueens {
+    transform: translate(-50%, -50%) rotate(-180deg) translate(-300px) rotate(-180deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.screamqueens:hover {
+    opacity: 0.5;
+}
+
+
+.curb {
+    transform: translate(-50%, -50%) rotate(-310deg) translate(300px) rotate(310deg);
+    position: absolute;
+}
+
+.curb:hover {
+    opacity: 0.5;
+}
+
+.grogu {
+    transform: translate(-50%, -50%) rotate(-250deg) translate(270px) rotate(250deg);
+    position: absolute;
+}
+
+.grogu:hover {
+    opacity: 0.5;
+}
+
+.whitelotus {
+    transform: translate(-50%, -50%) rotate(180deg) translate(300px) rotate(-180deg);
+    position: absolute;
+}
+
+.whitelotus:hover {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+button:hover {
+    color: #ff3399;
+    background-color: #000000;
+}
+
+
+#screamqueens {
+  border-radius: 20px;
+  animation: fadeIn 1.3s ease-in;
+}
+
+#curb {
+  border-radius: 20px;
+  animation: fadeIn 1.3s ease-in;
+}
+
+#grogu {
+  border-radius: 20px;
+  animation: fadeIn 1.3s ease-in;
+}
+
+#lotus {
+  border-radius: 20px;
+  animation: fadeIn 1.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} /*end page 1*/
+/*-------------------------------------------------------------------*/
+
+
+  .pg2 { 
+    grid-area: pg2; 
+    min-height: 300px;
+}
+  
+  .pg3 { grid-area: pg3; }
+  
+
+
+/*----------------------------------------------------------------------*/
+  .footer { 
+    background-color: transparent;
+    grid-area: footer;
+}
+  
