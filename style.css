@@ -1,8 +1,34 @@
 body {
     margin: 0;
+    background-image: radial-gradient(#cde9e9, #ffffff, #6c7d78);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+    cursor: crosshair;
+}
+
+.credit {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: last baseline;
+}
+
+.profilecontainer {
+    text-align: center;
+    max-width: 400px;
+    background: transparent;
+    padding: 40px 20px;
+    border-radius: 10px;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: auto auto auto 1fr;
+    height: 100vh;
+}
+
+.containercontainer {
+    margin: 0;
     padding-top: 4%;
     font-family: Arial, sans-serif;
-    background-image: radial-gradient(#ff3399, #ffffff, #ff3399);
+    background: transparent;
     background-size: cover;
     background-repeat: no-repeat;    
     background-attachment: fixed;
@@ -14,26 +40,14 @@ body {
     cursor: crosshair;
 }
 
-
-.profilecontainer {
-    text-align: center;
-    max-width: 400px;
-    background: transparent;
-    padding: 40px 20px;
-    border-radius: 10px;
-    display: grid;
-    gap: 5px;
-    grid-template-rows: auto auto auto 1fr;
-}
-
 .profilepic {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     margin: 0 auto;
     object-fit: fill;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* drop shadow */
   }
 
 h1 {
