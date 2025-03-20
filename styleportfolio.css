@@ -1,139 +1,92 @@
 body {
-    margin: 20;
+    margin: 0;
+    background-image: radial-gradient(#c7c2cb, #a79ca2, #7f7c7c);
+    width:100%;
+	height:300px;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+    cursor: crosshair;
+}
+
+
+
+.profilecontainer {
+    text-align: center;
+    max-width: 400px;
+    background: transparent;
+    background-color: #555454;
+    padding: 40px 40px;
+    border-radius: 10px;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: auto auto auto 1fr;
+    height: 100vh;
+}
+
+.containercontainer {
+    margin: 0;
     padding-top: 4%;
     font-family: Arial, sans-serif;
-    background-image: radial-gradient(#cde9e9, #ffffff, #6c7d78);
+    background: transparent;
     background-size: cover;
     background-repeat: no-repeat;    
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    align-items: center;
     color: #000000;
     cursor: crosshair;
-    align-items: center;
 }
 
-.containerbody {
-    display: flex;
-    flex-direction: column;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer"
-  }  
 
-header {
-    background-color: transparent;
+
+h1 {
+    font-size: 1.0rem;
+    margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    min-height: 100px;
+    color: #ffffff;
 }
 
-
-.containermain {  
-    display: grid;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "pg1 pg1 pg1"
-      "pg2 pg2 pg2"
-      "pg3 pg3 pg3"
-  }  
+h2 {
+    font-size: 1.9rem;
+    margin: 0;
+    font-family: "Cedarville Cursive", cursive;
+    color: #ffffff;
+}
 
 h4 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.1rem;
 }
-
-/*------------------------------------------------------------------------------------------------*/
-.pg1 { 
-    grid-area: pg1; 
-    min-height: 200px;
-    padding: 80px;
-}
-
-.typed-out{
-    overflow: hidden;
-    border-right: .15em solid rgb(46, 46, 46);
-    white-space: nowrap;
-    font-size: 1.3rem;
-    width: 0;
-    animation: 
-        typing 3s steps(20, end) forwards,
-        blink .3s infinite;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 91% }
-  }
-
-@keyframes blink {
-    from { border-color: transparent }
-    to { border-color: rgb(0, 0, 0); }
-  }
   
 
 
-nav {
-    position: relative;
-}
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-nav ul li {
-    position: absolute;
-    font-size: 30px;
-    transform: translate(-50%, -50%);
-}
 
+  
+footer {
+    height: 10vh;
+}
 
 
 .screamqueens {
     transform: translate(-50%, -50%) rotate(-180deg) translate(-300px) rotate(-180deg);
-    position: absolute;
-    top: 50%;
-    left: 50%;
 }
-
-.screamqueens:hover {
-    opacity: 0.5;
-}
-
 
 .curb {
     transform: translate(-50%, -50%) rotate(-310deg) translate(300px) rotate(310deg);
-    position: absolute;
-}
-
-.curb:hover {
-    opacity: 0.5;
 }
 
 .grogu {
     transform: translate(-50%, -50%) rotate(-250deg) translate(270px) rotate(250deg);
-    position: absolute;
-}
-
-.grogu:hover {
-    opacity: 0.5;
 }
 
 .whitelotus {
     transform: translate(-50%, -50%) rotate(180deg) translate(300px) rotate(-180deg);
-    position: absolute;
-}
-
-.whitelotus:hover {
-    opacity: 0.5;
 }
 
 a {
@@ -174,22 +127,23 @@ button:hover {
     to {
         opacity: 1;
     }
-} /*end page 1*/
-/*-------------------------------------------------------------------*/
-
-
-  .pg2 { 
-    grid-area: pg2; 
-    min-height: 300px;
 }
-  
-  .pg3 { grid-area: pg3; }
-  
 
-
-/*----------------------------------------------------------------------*/
-  .footer { 
-    background-color: transparent;
-    grid-area: footer;
+nav {
+    position: relative;
 }
-  
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul li {
+    position: absolute;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
