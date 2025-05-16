@@ -1,18 +1,41 @@
+
+@media (max-width: 550px) { 
+    body {
+        margin: 0;
+        background-color: #cacad1;
+        width: 100vw;
+        height: 100vh;
+        background-size: fill;
+        background-repeat: no-repeat;    
+        background-attachment: fixed;
+        cursor: none;
+    }
+
+    .containercontainer {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .profilecontainer {
+        display: none;
+    }
+}
+
 body {
     margin: 0;
-    background-image: linear-gradient(180deg, #1a1819, #cacad1);
-    width:100%;
-	height:300px;
+    background-image: url(hummingbird2.png);
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;    
-    background-attachment: fixed;
+    background-attachment: scroll;
+    background-position: center;
     cursor: crosshair;
 }
 
-.credit {
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: last baseline;
-}
 
 .profilecontainer {
     text-align: center;
@@ -25,6 +48,7 @@ body {
     gap: 5px;
     grid-template-rows: auto auto auto 1fr;
     height: 100vh;
+    align-self: center;
 }
 
 .containercontainer {
@@ -55,7 +79,7 @@ body {
 h1 {
     font-size: 0.8rem;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
     color: #50584d;
 }
@@ -153,3 +177,4 @@ h4 {
 footer {
     height: 10vh;
 }
+
