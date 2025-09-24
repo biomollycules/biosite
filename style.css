@@ -135,7 +135,7 @@ h4 {
 .linkwebsite,
 .linkgithub,
 .linklinkedin, 
-.linkpinterest
+.linkpinterest,
 .linktiktok {
     text-decoration: none;
     font-size: 0.8rem;
@@ -172,7 +172,7 @@ h4 {
 .linkwebsite:hover,
 .linkgithub:hover,
 .linklinkedin:hover,
-.linkpinterest:hover
+.linkpinterest:hover,
 .linktiktok:hover {
     background: #2c2b2b;
     color: #ffffff;
@@ -184,5 +184,6 @@ h4 {
 footer {
     height: 10vh;
 }
+
 
 
