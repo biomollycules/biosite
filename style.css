@@ -99,6 +99,15 @@ h4 {
     font-style: italic;
     font-size: 1.1rem;
 }
+
+.description {
+    text-align: left;
+    font-size: 0.8rem;
+    color: #50584d;
+    margin: 6px;
+    padding-bottom: 0%;
+    font-style: italic;
+}
   
 .bio {
     font-size: 0.4rem;
@@ -185,3 +194,5 @@ footer {
         font-size: 0.8rem;
         font-family: 'Courier New', Courier, monospace;
     }
+
+
