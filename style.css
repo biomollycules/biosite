@@ -29,7 +29,7 @@
 
 body {
     margin: 0;
-    background-color: #cacad1;
+    background-color: #ffffff;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -44,7 +44,7 @@ body {
     text-align: center;
     max-width: 400px;
     background: transparent;
-    background-color: #cacad1;
+    background-color: #ffffff;
     padding: 40px 40px;
     border-radius: 4px;
     display: grid;
@@ -88,7 +88,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     color: #1a1819;
@@ -100,12 +100,20 @@ h4 {
     font-size: 1.1rem;
 }
 
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: #000000;
+    text-align: left;
+}
+
+
 .description {
     text-align: left;
     font-size: 0.8rem;
     color: #50584d;
-    margin: 6px;
-    padding-bottom: 0%;
     font-style: italic;
 }
   
@@ -115,11 +123,27 @@ h4 {
     margin: 6px;
     padding-bottom: 0%;
 }
-  
+
+.linkiconsdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.linkicons {
+    border-radius: 60%;
+    background: transparent;
+    padding: 0px;
+}
+
 .links {
     display: grid;
     justify-content: center; 
-    gap: 10px;
+    gap: 20px;
+    margin: 0px;
     grid-template-columns: .7fr;
     max-width: 350px;
 }
@@ -135,7 +159,7 @@ h4 {
     width: 40px; 
     height: 40px;
     object-fit: fill;
-    padding: 10px;
+    padding: 20px;
 }
   
 .linkyoutube, 
@@ -152,7 +176,7 @@ h4 {
     border-radius: 50px; 
     display: grid;
     align-items: center; /* vertical center */
-    background: #ffffff;
+    background: linear-gradient(to bottom, #938d8d, #e6e6e6);
     color: #000000;
     padding: 0px 40px 0px 0px;
     font-weight: none;
@@ -180,7 +204,7 @@ h4 {
 .linkpinterest:hover,
 .linktiktok:hover, 
 .linkportfolio:hover {
-    background: #2c2b2b;
+    background: linear-gradient(to bottom, #e6e6e6, #938d8d);
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* drop shadow */
 
@@ -190,10 +214,14 @@ footer {
     height: 10vh;
 }
 
+
 .credit {
         font-size: 0.8rem;
         font-family: 'Courier New', Courier, monospace;
     }
 
+.wireframes {
+    margin-top: 20px;
+}
 
 
