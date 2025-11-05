@@ -139,6 +139,14 @@ h5 {
     text-align: left;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    font-size: 0.9rem;
+}
 
 .description {
     text-align: left;
@@ -227,5 +235,4 @@ footer {
         font-size: 0.8rem;
         font-family: 'Courier New', Courier, monospace;
     }
-
 
