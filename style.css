@@ -1,16 +1,13 @@
-@media (max-width: 450px) { 
-    body {
-        margin: 0;
-        background-color: #cacad1;
-        width: 100vw;
-        height: 100vh;
-        background-size: fill;
-        background-repeat: no-repeat;    
-        background-attachment: fixed;
-        cursor: none;
+@media (min-width: 600px) { 
+    .mobile {
+        display: none;
     }
 
-    .containercontainer {
+    .desktop {
+        display: block;
+    }
+
+    .container-container {
         display: none;
     }
 
@@ -18,16 +15,140 @@
         display: none;
     }
     
-    .footer {
+
+    .profile-container {
         display: none;
     }
 
-    .profilecontainer {
+}
+
+@media (max-width: 599px) { 
+    .desktop {
+        display: none;
+    }
+
+    .socials-desktop {
         display: none;
     }
 }
 
+
+.desktop {    /* desktop body */
+        margin: 0;
+        background-color: #ac9090;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;    
+        background-attachment: scroll;
+        background-position: center;
+        cursor: crosshair;
+    }
+
+header  {
+    background-color: rgb(255, 255, 255);
+}
+
+.head-container  {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.scroll-alert {
+    background-color: #67725E;
+    color:#ffffff;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px
+}
+
+.intro-desktop {
+    font-family: serif;
+    background-color: #c3c3c3;
+    background-image: url("jazz-background.jpg");
+    background-size: cover;
+    filter: grayscale(20);
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.intro-text {
+    flex: 2;
+    padding-right: 300px;
+    padding-left: 120px;
+    width: 300px;
+    justify-content: center;
+}
+
+h4 {
+    font-style: italic;
+}
+
+.intro-right {
+    flex: 1;
+    background-color: transparent;
+    border: 0px transparent;
+    border-radius: 0px;
+}
+
 body {
+    margin: 0;
+    padding: 0;
+}
+
+.socials-desktop {
+    padding: 10px;
+}
+
+.skills {
+    background-color: #ff0099;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ 
+.githubskills {
+    background-color: #00ccff;
+}
+
+.tools {
+    background-color: #ccff00;
+}
+
+
+/* Mobile Styles -------------------------------------------------*/
+
+.mobile { /* mobile body */
     margin: 0;
     background-color: #ffffff;
     width: 100%;
@@ -39,8 +160,7 @@ body {
     cursor: crosshair;
 }
 
-
-.profilecontainer {
+.profile-container {
     text-align: center;
     max-width: 400px;
     background: transparent;
@@ -54,21 +174,7 @@ body {
     align-self: center;
 }
 
-.profilecontainerportfolio {
-    text-align: center;
-    max-width: 400px;
-    background: transparent;
-    background-color: #ffffff;
-    padding: 40px 40px;
-    border-radius: 4px;
-    display: grid;
-    gap: 30px;
-    grid-template-rows: auto auto auto 1fr;
-    height: 100vh;
-    align-self: center;
-}
-
-.containercontainer {
+.container-container {
     margin: 0;
     padding-top: 4%;
     font-family: Arial, sans-serif;
@@ -84,23 +190,7 @@ body {
     cursor: crosshair;
 }
 
-.containercontainerportfolio {
-    margin: 0;
-    padding-top: 4%;
-    font-family: Arial, sans-serif;
-    background: transparent;
-    background-size: cover;
-    background-repeat: no-repeat;    
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    color: #000000;
-    cursor: crosshair;
-}
-
-.profilepic {
+.profile-pic {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -109,57 +199,11 @@ body {
     object-fit: fill;
   }
 
-h1 {
-    font-size: 0.8rem;
-    margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 100;
-    color: #50584d;
-}
-
 h2 {
     font-size: 1.2rem;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     color: #1a1819;
-}
-
-h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-size: 1.1rem;
-}
-
-h5 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    color: #000000;
-    text-align: left;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    font-size: 0.9rem;
-}
-
-.description {
-    text-align: left;
-    font-size: 0.8rem;
-    color: #50584d;
-    font-style: italic;
-}
-  
-.bio {
-    font-size: 0.4rem;
-    color: #50584d;
-    margin: 6px;
-    padding-bottom: 0%;
 }
 
 .linkiconsdiv {
@@ -180,7 +224,7 @@ ul {
 .links {
     display: grid;
     justify-content: center; 
-    gap: 20px;
+    gap: 15px;
     margin: 0px;
     grid-template-columns: .7fr;
     max-width: 350px;
@@ -199,37 +243,24 @@ ul {
     text-decoration: none;
     font-size: 0.73rem;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 50px; 
+    border-radius: 20px; 
     display: grid;
     align-items: center; /* vertical center */
-    background: linear-gradient(to bottom, #938d8d, #e6e6e6);
+    background: linear-gradient(to bottom, #938d8d, #d8ddde);
     color: #000000;
     padding: 0px 40px 0px 0px;
     font-weight: none;
     grid-template-columns: auto 1fr;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* drop shadow */
+    box-shadow: 0px 0px 1px 2px rgba(85, 125, 128, 0.5); /*shadow styles */
     width: 300px;
-}
-
-
-.linksectiontitle {
-    font-size: 0.9rem;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.linkportfolio:hover {
-    background: linear-gradient(to bottom, #e6e6e6, #938d8d);
-    color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* drop shadow */
-
 }
 
 footer {
     height: 10vh;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
 }
-
 
 .credit {
         font-size: 0.8rem;
